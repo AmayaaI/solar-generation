@@ -22,8 +22,8 @@ A REST API for managing rooftop solar installations and electricity generation d
 
 ## API
 
-- **Live API:** https://solar-generation-data-api.onrender.com/api/v1
-- **Swagger Documentation:** https://solar-generation-data-api.onrender.com/api-docs/
+- **Live API:** https://solar-generation.onrender.com/
+- **Swagger Documentation:** https://solar-generation.onrender.com/api-docs/
 - **Health Check:** https://solar-generation-data-api.onrender.com/health
 - **Authentication:** `POST /api/v1/auth/tokens`
 
