@@ -1,0 +1,35 @@
+{
+  "name": "slsea-solar-generation-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Versioned REST API for solar installation generation readings",
+  "main": "src/server.js",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/seed/run.js",
+    "derive:device-secret": "node src/seed/derive-device-secret.js",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch",
+    "verify:local": "node scripts/verify-local.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "joi": "^18.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.24.5",
+    "swagger-ui-express": "^5.0.1",
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "jest": "^30.5.0",
+    "mongodb-memory-server": "^10.2.3",
+    "supertest": "^7.1.4"
+  }
+}

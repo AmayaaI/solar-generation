@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: slsea-solar-api
+    runtime: node
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_TTL
+        value: 15m
+      - key: MONGODB_URI
+        sync: false
